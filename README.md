@@ -14,3 +14,8 @@ _owner as a function parameter, which in turn, will be responsible for requiring
 addition, I indicated that the function is of the view type, as it does not make any modifications to the blockchain, it only 
 brings data that is already registered in it, this is somehow efficient in relation to gas, finally, I also defined that this 
 function returns a string that must be allocated in the memory.
+
+5 - Em seguida eu alterei o address do mapping, de string para um array de strings. Além disso, modifiquei a createTweet
+function, para que ao invés de apenas atribuir um novo valor à variável tweets, seja adicionado um novo valor ao array. Também
+alterei a função getTweet, para que além passar um endereço como parâmetro da função, eu tenha que passar o index do tweet
+pretendo visualizar dentro do array.
