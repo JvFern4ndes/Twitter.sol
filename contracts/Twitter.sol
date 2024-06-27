@@ -15,6 +15,12 @@ contract Twitter {
 
     mapping(address => Tweet[]) public tweets;
 
+    address public owner;
+
+    constructor() {
+        owner = msg.sender;
+    }
+
     function changeTweetLength(uint16 newTweetLength) public {
         MAX_TWEET_LENGTH = newTweetLength;
     }
