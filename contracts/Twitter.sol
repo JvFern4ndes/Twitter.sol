@@ -18,6 +18,8 @@ contract Twitter {
 
     address public owner;
 
+    event createdTweet(uint256 id, address author, string content, uint256 timestamp);
+
     constructor() {
         owner = msg.sender;
     }
@@ -43,6 +45,8 @@ contract Twitter {
         });
 
         tweets[msg.sender].push(newTweet);
+
+        emit createdTweet(newTweet.id, newTweet.author, newTweet.content, newTweet.timestamp);
     }
 
     function likeTweet(address author, uint256 id) external {
