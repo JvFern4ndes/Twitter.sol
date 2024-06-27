@@ -41,3 +41,8 @@ deployed it.
 
 11 - In this step I created the modifier that will be used in the changeTweetLength function, which will allow only the owner to 
 be able to use the changeTweetLength function.
+
+12 - In this step I applied the onlyOwner modifier to the changeTweetLength function, and then I carried out the tests and everything 
+worked perfectly well, both the change by owner only and the size change proved to be effective.
+
+13 - I added an id to the Tweet struct and then defined that this id will be the Tweet's position in the tweets array.

@@ -7,6 +7,7 @@ contract Twitter {
     uint16 public MAX_TWEET_LENGTH = 280;
 
     struct Tweet {
+        uint256 id;
         address author;
         string content;
         uint256 timestamp;
@@ -22,11 +23,11 @@ contract Twitter {
     }
 
     modifier onlyOwner() {
-        require(msg.sender == owner, "YOU ARE NOT THE OWNE!");
+        require(msg.sender == owner, "YOU ARE NOT THE OWNER!");
         _;
     }
 
-    function changeTweetLength(uint16 newTweetLength) public {
+    function changeTweetLength(uint16 newTweetLength) public onlyOwner {
         MAX_TWEET_LENGTH = newTweetLength;
     }
 
@@ -34,6 +35,7 @@ contract Twitter {
         require(bytes(_tweet).length <= MAX_TWEET_LENGTH, "This Tweet is too long!");
 
         Tweet memory newTweet = Tweet({
+            id: tweets[msg.sender].length,
             author: msg.sender,
             content: _tweet,
             timestamp: block.timestamp,
