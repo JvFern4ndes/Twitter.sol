@@ -15,7 +15,10 @@ addition, I indicated that the function is of the view type, as it does not make
 brings data that is already registered in it, this is somehow efficient in relation to gas, finally, I also defined that this 
 function returns a string that must be allocated in the memory.
 
-5 - Em seguida eu alterei o address do mapping, de string para um array de strings. Além disso, modifiquei a createTweet
-function, para que ao invés de apenas atribuir um novo valor à variável tweets, seja adicionado um novo valor ao array. Também
-alterei a função getTweet, para que além passar um endereço como parâmetro da função, eu tenha que passar o index do tweet
-pretendo visualizar dentro do array.
+5 - Then I changed the mapping address, from string to an array of strings. Additionally, I modified createTweet
+function, so that instead of just assigning a new value to the tweets variable, a new value is added to the array. Also
+I changed the getTweet function, so that in addition to passing an address as a function parameter, I have to pass the tweet index
+I want to visualize inside the array.
+
+6- I created the function to return all tweets, the function is very similar to listing just one tweet based on the index which is
+passed as a parameter, the only difference is that this function does not have the index parameter.
