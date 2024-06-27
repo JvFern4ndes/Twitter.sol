@@ -34,3 +34,10 @@ limit per tweet through require.
 
 9 - In this step I created the changeTweetLength function, and for it to work I changed the MAX_TWEET_LENGTH variable from constant to public, 
 otherwise it would not be possible to change its value.
+
+10 - In this step I created a variable called owner, of type address, and then I created a constructor to define which address 
+will be the owner of the contract. The constructor is "executed" during contract deployment, so its owner will be the one who 
+deployed it.
+
+11 - In this step I created the modifier that will be used in the changeTweetLength function, which will allow only the owner to 
+be able to use the changeTweetLength function.

@@ -21,6 +21,11 @@ contract Twitter {
         owner = msg.sender;
     }
 
+    modifier onlyOwner() {
+        require(msg.sender == owner, "YOU ARE NOT THE OWNE!");
+        _;
+    }
+
     function changeTweetLength(uint16 newTweetLength) public {
         MAX_TWEET_LENGTH = newTweetLength;
     }
