@@ -22,3 +22,9 @@ I want to visualize inside the array.
 
 6- I created the function to return all tweets, the function is very similar to listing just one tweet based on the index which is
 passed as a parameter, the only difference is that this function does not have the index parameter.
+
+7 - At this stage of the project, I learned about structs and then implemented the first struct in the contract. For this, I created the 
+struct Tweet, then I changed the mapping string array to an array of structs, then changed the function
+createTweet, creating an instance of the struct with its keys and values, and then passing this new instance to the push in 
+array of tweets. Finally, I changed the getTweet and getAllTweets functions to bring the Tweet struct arrays, instead of the arrays 
+of tweets.
