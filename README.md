@@ -46,3 +46,6 @@ be able to use the changeTweetLength function.
 worked perfectly well, both the change by owner only and the size change proved to be effective.
 
 13 - I added an id to the Tweet struct and then defined that this id will be the Tweet's position in the tweets array.
+
+14 - In this step I created the functions to like and dislike tweets, for this I passed the tweet's author and id as function parameters, 
+in addition, I created a require, which checks if that tweet with author and id really exists.
