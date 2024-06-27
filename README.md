@@ -31,3 +31,6 @@ of tweets.
 
 8 - At this stage of the project I learned about requires, which are basically solidity conditionals, and then I implemented a character 
 limit per tweet through require.
+
+9 - In this step I created the changeTweetLength function, and for it to work I changed the MAX_TWEET_LENGTH variable from constant to public, 
+otherwise it would not be possible to change its value.
