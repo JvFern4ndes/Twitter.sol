@@ -28,3 +28,6 @@ struct Tweet, then I changed the mapping string array to an array of structs, th
 createTweet, creating an instance of the struct with its keys and values, and then passing this new instance to the push in 
 array of tweets. Finally, I changed the getTweet and getAllTweets functions to bring the Tweet struct arrays, instead of the arrays 
 of tweets.
+
+8 - At this stage of the project I learned about requires, which are basically solidity conditionals, and then I implemented a character 
+limit per tweet through require.
