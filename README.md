@@ -49,3 +49,7 @@ worked perfectly well, both the change by owner only and the size change proved 
 
 14 - In this step I created the functions to like and dislike tweets, for this I passed the tweet's author and id as function parameters, 
 in addition, I created a require, which checks if that tweet with author and id really exists.
+
+15 - At this stage of the project, I created the tweetLiked and tweetUnliked events and then created the emits in their respective functions, and I learned that the events 
+serve to make real-world information available on the blockchain network, and then make this information more easily accessible, I also learned that this is more efficient 
+than storing this information.
