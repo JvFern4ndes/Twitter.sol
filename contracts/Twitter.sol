@@ -20,7 +20,7 @@ contract Twitter {
 
     event createdTweet(uint256 id, address author, string content, uint256 timestamp);
     event TweetLiked(address liker, address tweetAuthor, uint256 tweetId, uint256 newLikeCount);
-    event TweetUnliked(address unliker, address tweetAuthor, uint256 tweetId, newLikeCount);
+    event TweetUnliked(address unliker, address tweetAuthor, uint256 tweetId, uint256 newLikeCount);
 
     constructor() {
         owner = msg.sender;
