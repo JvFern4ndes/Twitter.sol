@@ -35,6 +35,16 @@ contract Twitter {
         MAX_TWEET_LENGTH = newTweetLength;
     }
 
+    function getTotalLikes(address _author) external view returns(uint) {
+        uint totalLikes;
+
+        for (uint i = 0; i < tweets[_author].length; i++ ) {
+            totalLikes += tweets[_author][i].likes;
+        }
+
+        return totalLikes;
+    }
+
     function createTweet(string memory _tweet) public {
         require(bytes(_tweet).length <= MAX_TWEET_LENGTH, "This Tweet is too long!");
 
@@ -72,8 +82,8 @@ contract Twitter {
         return tweets[msg.sender][_i];
     }
 
-    function getAllTweets() public view returns (Tweet[] memory) {
-        return tweets[msg.sender];
+    function getAllTweets(address _owner) public view returns (Tweet[] memory) {
+        return tweets[_owner];
     }
 
 }

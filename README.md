@@ -53,3 +53,10 @@ in addition, I created a require, which checks if that tweet with author and id 
 15 - At this stage of the project, I created the tweetLiked and tweetUnliked events and then created the emits in their respective functions, and I learned that the events 
 serve to make real-world information available on the blockchain network, and then make this information more easily accessible, I also learned that this is more efficient 
 than storing this information.
+
+16 - At this stage of the project I developed the getTotalLikes function, responsible for pulling all the likes that a given user received on their tweets.
+This function receives a parameter _author, where we define which user we want to view the likes of, within the function I created a variable called totalLikes, and used a loop,
+which adds the likes of the author's tweets as long as i is less than the number of tweets that the author created. Finally, this function returns the totalLikes value. It is 
+also worth remembering that this function is external, as it is not used anywhere else in the code, in addition it receives the "view" as it does not make any changes to the 
+blockchain, it only retrieves the information contained in the blockchain, and marks it as view in the It helps save gas, and I also needed to define that the function returns 
+data of type uint.
