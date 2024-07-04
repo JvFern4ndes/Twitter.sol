@@ -60,3 +60,8 @@ which adds the likes of the author's tweets as long as i is less than the number
 also worth remembering that this function is external, as it is not used anywhere else in the code, in addition it receives the "view" as it does not make any changes to the 
 blockchain, it only retrieves the information contained in the blockchain, and marks it as view in the It helps save gas, and I also needed to define that the function returns 
 data of type uint.
+
+17- At this stage of the project, I learned how inheritance works within solidity, and to practice, I changed my custom modifier onlyOwner, to a standardized modifier from 
+openzeppelin, a company responsible for providing standardized functionalities, such as security features for example, as is In the case of the onlyOwner modifier, it didn't 
+work out at first, because the openZeppelin constructor receives an initialOwner parameter, which I wasn't passing within the Twitter contract, so I needed to pass this small 
+adjustment, I ended up with an empty constructor, just to the modifier works, I need to research later to find out if this can have any negative impact
