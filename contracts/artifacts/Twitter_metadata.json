@@ -11,6 +11,11 @@
 						"internalType": "address",
 						"name": "initialOwner",
 						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_profileContract",
+						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -480,11 +485,11 @@
 			]
 		},
 		"contracts/Twitter.sol": {
-			"keccak256": "0x45f2d59fd4900551e1bfcc26246404a5c7e36c1cb715a89a1784937fbcd13416",
+			"keccak256": "0x21d50d7e6aaded679e382bb1aeb72879eb432a115a469e7cf3830960dad1989c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://aaae4f410d71535f0f2ec83b2c71fcdaa0e9d23f2375c0c6c06181a8d1498e26",
-				"dweb:/ipfs/Qmcch8RmV7LAE1rszsZ4GHqXyJ5x1izhdhjh8az5grYajg"
+				"bzz-raw://5973b9aee69c2660636ef5fd133d46ede72b309fbdb269fb04365939200d4922",
+				"dweb:/ipfs/Qmde8dQiAue6jgS38sKE5NTXgRWfk1ahug4tr8KTwWiDBj"
 			]
 		}
 	},
