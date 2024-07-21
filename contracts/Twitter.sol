@@ -4,6 +4,15 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 pragma solidity ^0.8.26;
 
+interface IProfile {
+    struct UserProfile {
+        string displayName;
+        string bio;
+    }
+
+    function getProfile(address _user) external view returns(UserProfile memory);
+}
+
 contract Twitter is Ownable {
 
     uint16 public MAX_TWEET_LENGTH = 280;
