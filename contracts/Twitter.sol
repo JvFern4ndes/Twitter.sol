@@ -27,11 +27,14 @@ contract Twitter is Ownable {
 
     mapping(address => Tweet[]) public tweets;
 
+    IProfile profileContract;
+
     event createdTweet(uint256 id, address author, string content, uint256 timestamp);
     event TweetLiked(address liker, address tweetAuthor, uint256 tweetId, uint256 newLikeCount);
     event TweetUnliked(address unliker, address tweetAuthor, uint256 tweetId, uint256 newLikeCount);
 
-    constructor(address initialOwner) Ownable(initialOwner) {
+    constructor(address initialOwner, address _profileContract) Ownable(initialOwner) {
+        profileContract = IProfile(_profileContract);
     }
 
     function changeTweetLength(uint16 newTweetLength) public onlyOwner {
